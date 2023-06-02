@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire d'enregistrement des participants</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item logo">
+            <a class="nav-link link-logo" href="#">
+                <img src="/Images/SIMPLON-ron.png" alt="" id="img"> 
+
+                <span> SIMPLON CÔTE D'IVOIRE</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Liste des participants</a>
+          </li>
+        </ul>
+      </nav>
+      
+  <h1>Formulaire d'enregistrement des participants</h1>
+
+  <form action="#" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+    
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" required>
+    
+    <label for="telephone">Numéro de téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" required>
+    <span id="telephoneError" style="color: #CE0033;"></span>
+    
+    <label for="email">Adresse email :</label>
+    <input type="email" id="email" name="email" required>
+    
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <script src="/JS/app.js"></script>
+</body>
+</html>

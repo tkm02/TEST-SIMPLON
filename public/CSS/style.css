@@ -1,0 +1,93 @@
+/* CSS pour le formulaire d'enregistrement des participants */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #CE0033;
+  }
+  /* CSS pour la navbar */
+
+.navbar {
+    background-color: #333;
+    padding: 5px;
+    display: flex;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    width: 75%;
+    /* border: 2px solid; */
+  }
+  .nav-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .link-logo{
+    width: 50%;
+  }
+#img{
+    width: 50px;
+}
+  
+  /* CSS pour le formulaire d'enregistrement des participants */
+form{
+    /* border: 2px solid; */
+    max-width: 600px;
+    margin: 0 auto;
+    /* background-color: #f1f1f1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+input {
+    width: 80%;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    outline: none;
+    /* padding: 5px; */
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #CE0033;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+ 
