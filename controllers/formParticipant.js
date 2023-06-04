@@ -15,6 +15,7 @@ const formPaticipant = (req,res)=>{
     participant.save()
       .then(() => {
         console.log('le Participant est enregister ');
+        res.send('Vous avez été enregistrer');
         // res.redirect('/formPaticipant');   
       })
       .catch(err => {
