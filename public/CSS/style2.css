@@ -11,7 +11,19 @@ table td {
   vertical-align: middle;
   border-bottom: 1px solid #ddd;
 }
-
+#fin{
+  display: none;
+}
+#animation{
+  width: 50%;
+  /* height: 80vh; */
+  /* border: 2px solid; */
+}
+#animation lottie-player{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
 table th {
   background-color: #CE0033;
   font-weight: bold;

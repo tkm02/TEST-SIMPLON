@@ -14,17 +14,17 @@
 
                 <span> SIMPLON CÔTE D'IVOIRE</span>
             </a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="/formPaticipant">formulaire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Liste des participants</a>
+            <a class="nav-link" href="/listeParticipant">Liste des participants</a>
           </li>
         </ul>
       </nav>
       <h1>Liste des participants</h1>
-      
+     
       <table>
         <thead>
           <tr>
@@ -35,37 +35,26 @@
             <th>Email</th>
           </tr>
         </thead>
+
         <tbody>
-          <tr>
-            <td>01/05/2023</td>
-            <td>Tuo</td>
-            <td>Mamadou</td>
-            <td>05-76-12-02-38</td>
-            <td>mamadoutuo77@gmail.com</td>
-          </tr>
-          <tr>
-            <td>01/05/2023</td>
-            <td>Tuo</td>
-            <td>Mamadou</td>
-            <td>05-76-12-02-38</td>
-            <td>mamadoutuo77@gmail.com</td>
-          </tr>
-          <tr>
-            <td>01/05/2023</td>
-            <td>Tuo</td>
-            <td>Mamadou</td>
-            <td>05-76-12-02-38</td>
-            <td>mamadoutuo77@gmail.com</td>
-          </tr>
-          <tr>
-            <td>01/05/2023</td>
-            <td>Tuo</td>
-            <td>Mamadou</td>
-            <td>07-89-82-78-21</td>
-            <td>yoctiiking@gmail.com</td>
-          </tr>
+          <% participants.forEach(function(participant) { %>
+            <% let dateString = participant.date; %>
+            <% let date = new Date(dateString); %>
+            <% let formattedDate = ("0" + date.getDate()).slice(-2) + "/" + ("0" + (date.getMonth() + 1)).slice(-2) + "/" + date.getFullYear(); %>
+            <% let formattedTime = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2) + ":" + ("0" + date.getSeconds()).slice(-2); %>
+            <% let formattedDateTime = formattedDate + "-" + formattedTime; %>
+            
+            <tr>
+              <td><%= formattedDateTime %></td>
+              <td><%= participant.nom.toUpperCase() %></td>
+              <td><%= participant.prenom.toUpperCase() %></td>
+              <td><%= participant.telephone %></td>
+              <td><%= participant.email %></td>
+            </tr>
+          <% }); %>
+          
+          
           
         </tbody>
       </table>
-
 </body>

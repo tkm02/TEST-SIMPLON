@@ -1,5 +1,10 @@
+const Participant = require('../model/Participant');
+
 const listeParticipantView = (req,res)=>{
-    res.render('listeParticipant'); 
+    Participant.find()
+        .then(participants=>{    
+            res.render('listeParticipant', { participants }); 
+        })
 }
 
 module.exports ={
