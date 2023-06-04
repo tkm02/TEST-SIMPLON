@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>Formulaire d'enregistrement des participants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS/style.css">
-  <link rel="stylesheet" href="/CSS/style2.css">
+  
 </head>
 <body>
   
@@ -24,26 +25,40 @@
           </li>
         </ul>
       </nav>
-      <!--<div id="animation">
-        <lottie-player id="fin" src="https://assets1.lottiefiles.com/packages/lf20_zwkm4xbs.json"  background="transparent"  speed="1"   loop       autoplay></lottie-player>
-      </div>-->
   <h1>Formulaire d'enregistrement des participants</h1>
 
   <form  id="form" method="post">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
+    <div>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+    </div>
     
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" required>
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+    </div>
+
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+    </div>
     
-    <label for="telephone">Numéro de téléphone :</label>
-    <input type="tel" id="telephone" name="telephone" required>
-    <span id="telephoneError" style="color: #CE0033;"></span>
+
+    <div>
+      <label for="telephone">Numéro de téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" required>
+      <span id="telephoneError" style="color: #CE0033;"></span>
+    </div>
+   
     
-    <label for="email">Adresse email :</label>
-    <input type="email" id="email" name="email" required>
-    
-    <input type="submit" value="Envoyer">
+    <div>
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <input type="submit" value="Envoyer">
+    </div>
   </form>
 
   <script src="/JS/app.js"></script>
